@@ -1,7 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="aea1f56e-71b4-47cb-9d81-3a67306526aa" name="Default Changelist" comment="" />
+    <list default="true" id="aea1f56e-71b4-47cb-9d81-3a67306526aa" name="Default Changelist" comment="Authentication Tutorial">
+      <change afterPath="$PROJECT_DIR$/app/Conversation.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Events/ProductPurchased.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ConversationController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/NotificationController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Listeners/AwardAchievements.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Listeners/SendSharableCoupon.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Replies.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/factories/ConversationFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/factories/ReplyFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_08_04_161133_create_notifications_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_08_04_232413_create_conversations_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_08_05_125214_create_replies_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/conversations/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/conversations/replies.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/conversations/show.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/emails/contact.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/notifications/show.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/payments/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/EventServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/EventServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -127,12 +169,15 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1fRlYjzcBbS88bs3ut9WdjwEtWV" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../freshProject" />
@@ -143,6 +188,13 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="php artisan make:event ProductPurchased" />
+      <command value="php artisan make:listener SendSharableCoupon -e ProductPurchased" />
+    </option>
   </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -161,17 +213,102 @@
       <workItem from="1596188837103" duration="1117000" />
       <workItem from="1596193748688" duration="6965000" />
       <workItem from="1596206801883" duration="776000" />
-      <workItem from="1596228790666" duration="757000" />
+      <workItem from="1596228790666" duration="2593000" />
+      <workItem from="1596463439611" duration="628000" />
+      <workItem from="1596464940409" duration="585000" />
+      <workItem from="1596470473484" duration="306000" />
+      <workItem from="1596532283894" duration="988000" />
+      <workItem from="1596533304709" duration="6892000" />
+      <workItem from="1596548189362" duration="172000" />
+      <workItem from="1596548387323" duration="1496000" />
+      <workItem from="1596554459735" duration="500000" />
+      <workItem from="1596555026720" duration="147000" />
+      <workItem from="1596555638129" duration="15000" />
+      <workItem from="1596555682126" duration="9510000" />
+      <workItem from="1596626195772" duration="8122000" />
     </task>
+    <task id="LOCAL-00001" summary="Authentication Tutorial">
+      <created>1596230707563</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1596230707563</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Authentication Tutorial" />
+    <option name="LAST_COMMIT_MESSAGE" value="Authentication Tutorial" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1596196580957">
+    <state x="488" y="46" key="#com.intellij.ide.util.MemberChooser" timestamp="1596562767157">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1596196580957" />
+    <state x="488" y="46" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1596562767157" />
+    <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1596562312998">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1596562312998" />
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1596233682882">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1596233682882" />
+    <state x="561" y="262" key="Github.ShareDialog" timestamp="1596230810869">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="561" y="262" key="Github.ShareDialog/0.0.1366.728@0.0.1366.728" timestamp="1596230810869" />
+    <state width="1286" height="163" key="GridCell.Tab.0.bottom" timestamp="1596562179559">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1286" height="163" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1596562179559" />
+    <state width="1286" height="163" key="GridCell.Tab.0.center" timestamp="1596562179559">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1286" height="163" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1596562179559" />
+    <state width="1286" height="163" key="GridCell.Tab.0.left" timestamp="1596562179558">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1286" height="163" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1596562179558" />
+    <state width="1286" height="163" key="GridCell.Tab.0.right" timestamp="1596562179559">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1286" height="163" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1596562179559" />
+    <state x="513" y="87" key="NewPhpClassDialog" timestamp="1596582044110">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="513" y="87" key="NewPhpClassDialog/0.0.1366.728@0.0.1366.728" timestamp="1596582044110" />
+    <state x="517" y="287" key="NewPhpFileDialog" timestamp="1596582595874">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="517" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1596582595874" />
+    <state x="275" y="84" key="Vcs.Push.Dialog.v2" timestamp="1596230760470">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="84" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1596230760470" />
+    <state x="339" y="164" width="672" height="677" key="run.anything.popup" timestamp="1596561826776">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="339" y="164" width="672" height="677" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1596561826776" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1596559804121">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1596559804121" />
   </component>
 </project>
