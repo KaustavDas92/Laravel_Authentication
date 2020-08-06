@@ -15,9 +15,20 @@ class CreateRepliesTable extends Migration
     {
         Schema::create('replies', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('username');
+            $table->unsignedBigInteger('user_id');
+            $table->unsignedBigInteger('conversation_id');
             $table->text('body');
             $table->timestamps();
+
+            $table->foreign('user_id')
+                ->references('id')
+                ->on('users')
+                ->cascadeOnDelete();
+
+            $table->foreign('conversation_id')
+                ->references('id')
+                ->on('conversations')
+                ->cascadeOnDelete();
         });
     }
 

@@ -40,4 +40,26 @@ class User extends Authenticatable
     {
         return $this->hasMany(Conversation::class);
     }
+    function replies()
+    {
+        return $this->hasMany(Replies::class);
+    }
+    function roles()
+    {
+        return $this->belongsToMany(Role::class)->withTimestamps();
+    }
+
+    //creating many to many relationship with user and abilities
+    function assignRole($Role)
+    {
+        if(is_string($Role))
+            $Role=Role::where('name',$Role)->firstOrFail();
+            ;
+        $this->roles()->save($Role);
+    }
+    function userAbility()
+    {
+        return $this->roles->map->abilities->flatten()->pluck('name')->unique();
+    }
+
 }

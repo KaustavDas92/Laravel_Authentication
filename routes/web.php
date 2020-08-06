@@ -13,10 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+auth()->loginUsingId(2);
 Route::get('/', function () {
     return view('welcome');
 });
 
+Route::post('/best-replies/{reply}','ConversationBestReplyController@store')->middleware('auth');;
 Route::get('/conversations','ConversationController@index')->middleware('auth');;
 Route::get('/conversations/{conversations}','ConversationController@show')->middleware('auth');;
 //Route::get('/payments','PaymentsController@show')->middleware('auth');

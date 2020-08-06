@@ -6,10 +6,11 @@
 
         <title>Laravel</title>
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
 
-        <!-- Styles -->
+        <!-- Fonts
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">-->
+
+        <!-- Styles
         <style>
             html, body {
                 background-color: #fff;
@@ -61,13 +62,13 @@
             .m-b-md {
                 margin-bottom: 30px;
             }
-        </style>
+        </style>-->
     </head>
     <body>
         <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
+        <!-- @if (Route::has('login'))
                 <div class="top-right links">
-                    @auth
+                @auth
                         <a href="{{ url('/home') }}">Home</a>
                     @else
                         <a href="{{ route('login') }}">Login</a>
@@ -98,7 +99,17 @@
                     <a href="https://vapor.laravel.com">Vapor</a>
                     <a href="https://github.com/laravel/laravel">GitHub</a>
                 </div>
-            </div>
+            </div>-->
+
+
+                <div>
+                    <h1> My Site</h1>
+                    @can('edit forum')
+                     <li>
+                         <a href="#">Edit Forum?</a>
+                     </li>
+                    @endcan
+                 </div>
         </div>
     </body>
 </html>

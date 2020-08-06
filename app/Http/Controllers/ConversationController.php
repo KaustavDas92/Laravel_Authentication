@@ -16,7 +16,8 @@ class ConversationController extends Controller
     {
         //
 
-        return view('conversations.index',['conversation'=>Conversation::all()]);
+        $conversations = Conversation::all();
+        return view('conversations.index',['conversation'=> $conversations]);
     }
 
 

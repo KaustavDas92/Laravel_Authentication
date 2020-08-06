@@ -19,29 +19,23 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aea1f56e-71b4-47cb-9d81-3a67306526aa" name="Default Changelist" comment="Authentication Tutorial">
-      <change afterPath="$PROJECT_DIR$/app/Conversation.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Events/ProductPurchased.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ConversationController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/NotificationController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Listeners/AwardAchievements.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Listeners/SendSharableCoupon.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Replies.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/factories/ConversationFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/factories/ReplyFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_08_04_161133_create_notifications_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_08_04_232413_create_conversations_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_08_05_125214_create_replies_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/conversations/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/conversations/replies.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/conversations/show.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/emails/contact.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/notifications/show.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/payments/create.blade.php" afterDir="false" />
+    <list default="true" id="aea1f56e-71b4-47cb-9d81-3a67306526aa" name="Default Changelist" comment="Done Till Authorization">
+      <change afterPath="$PROJECT_DIR$/app/Ability.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ConversationBestReplyController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Policies/ConversationPolicy.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Role.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_08_06_141628_create_roles_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeds/ConversationSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/EventServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/EventServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Conversation.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Conversation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ConversationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ConversationController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Replies.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Replies.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/ReplyFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/ReplyFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_08_05_125214_create_replies_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_08_05_125214_create_replies_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/conversations/replies.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/conversations/replies.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,6 +57,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="PhpDebugGeneral" listening_started="true" />
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/symfony/error-handler" />
@@ -225,7 +220,8 @@
       <workItem from="1596555026720" duration="147000" />
       <workItem from="1596555638129" duration="15000" />
       <workItem from="1596555682126" duration="9510000" />
-      <workItem from="1596626195772" duration="8122000" />
+      <workItem from="1596626195772" duration="17191000" />
+      <workItem from="1596715430299" duration="13453000" />
     </task>
     <task id="LOCAL-00001" summary="Authentication Tutorial">
       <created>1596230707563</created>
@@ -234,7 +230,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596230707563</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Done Till Authorization">
+      <created>1596649352081</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1596649352081</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -255,7 +258,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Authentication Tutorial" />
-    <option name="LAST_COMMIT_MESSAGE" value="Authentication Tutorial" />
+    <MESSAGE value="Done Till Authorization" />
+    <option name="LAST_COMMIT_MESSAGE" value="Done Till Authorization" />
   </component>
   <component name="WindowStateProjectService">
     <state x="488" y="46" key="#com.intellij.ide.util.MemberChooser" timestamp="1596562767157">
@@ -298,10 +302,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="517" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1596582595874" />
-    <state x="275" y="84" key="Vcs.Push.Dialog.v2" timestamp="1596230760470">
+    <state x="275" y="84" key="Vcs.Push.Dialog.v2" timestamp="1596649387269">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="84" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1596230760470" />
+    <state x="275" y="84" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1596649387269" />
     <state x="339" y="164" width="672" height="677" key="run.anything.popup" timestamp="1596561826776">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
